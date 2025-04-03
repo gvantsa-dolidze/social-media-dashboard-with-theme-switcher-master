@@ -10,7 +10,7 @@
   background-color: #fff;
 }
 .light-mode .card:hover {
-  background-color: #E1E4F0;
+  background-color: #e1e4f0;
 }
 
 .text-color-white {
@@ -79,10 +79,23 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 header .header-left-content {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+@media (max-width: 550px) {
+  header .header-left-content {
+    border-bottom: 1px solid #848bab;
+    padding-bottom: 20px;
+    align-items: center;
+  }
 }
 header .header-left-content .header-title {
   font-size: 28px;
@@ -96,6 +109,12 @@ header .btn-content {
   display: flex;
   align-items: center;
   gap: 13px;
+}
+@media (max-width: 550px) {
+  header .btn-content {
+    margin-top: 20px;
+    justify-content: space-around;
+  }
 }
 header .btn-content .btn-text {
   font-size: 14px;
@@ -154,6 +173,11 @@ header .btn-content .switch .slider.round:before {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 1055px) {
+  .card-section .top-card-container {
+    justify-content: space-evenly;
+  }
+}
 .card-section .top-card-container .card {
   min-width: 255px;
   height: 216px;
@@ -164,6 +188,11 @@ header .btn-content .switch .slider.round:before {
   align-items: center;
   margin-bottom: 24px;
   cursor: pointer;
+}
+@media (max-width: 508px) {
+  .card-section .top-card-container .card {
+    width: 326px;
+  }
 }
 .card-section .top-card-container .card .social-media {
   display: flex;
@@ -208,12 +237,22 @@ header .btn-content .switch .slider.round:before {
   font-weight: 700;
   margin-top: 46px;
 }
+@media (max-width: 1055px) {
+  .cards-section-title {
+    text-align: center;
+  }
+}
 
 .second-card-container {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 1055px) {
+  .second-card-container {
+    justify-content: space-evenly;
+  }
 }
 .second-card-container .card {
   width: 255px;
@@ -226,6 +265,11 @@ header .btn-content .switch .slider.round:before {
   border-radius: 5px;
   margin-top: 24px;
   cursor: pointer;
+}
+@media (max-width: 508px) {
+  .second-card-container .card {
+    width: 326px;
+  }
 }
 .second-card-container .card .top {
   display: flex;

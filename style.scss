@@ -18,14 +18,14 @@ $card-top-border: linear-gradient(
 
 .dark-mode {
   background-color: $dark;
-  .card:hover{
+  .card:hover {
     background-color: $shadow-midnight;
   }
 }
 .light-mode {
   background-color: $white;
   .card:hover {
-    background-color: #E1E4F0;
+    background-color: #e1e4f0;
   }
 }
 
@@ -38,8 +38,8 @@ $card-top-border: linear-gradient(
 .text-color-black {
   color: $dark;
 }
-.text-color-red{
-  color:$red;
+.text-color-red {
+  color: $red;
 }
 .card-dark {
   background-color: $dark-navy-gray;
@@ -85,10 +85,21 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  @media(max-width:550px){
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .header-left-content {
     display: flex;
     flex-direction: column;
     gap: 3px;
+
+    @media(max-width:550px){
+      border-bottom: 1px solid $grey;
+      padding-bottom:20px;
+      align-items: center;
+    }
     .header-title {
       font-size: 28px;
       font-weight: 700;
@@ -102,6 +113,11 @@ header {
     display: flex;
     align-items: center;
     gap: 13px;
+
+    @media(max-width:550px){
+      margin-top: 20px;
+      justify-content: space-around;
+    }
     .btn-text {
       font-size: 14px;
       font-weight: 700;
@@ -159,11 +175,15 @@ header {
 
 .card-section {
   margin-top: 136px;
+  
+
   .top-card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    @media (max-width: 1055px) {
+      justify-content: space-evenly;
+    }
     .card {
       min-width: 255px;
       height: 216px;
@@ -174,6 +194,9 @@ header {
       align-items: center;
       margin-bottom: 24px;
       cursor: pointer;
+      @media(max-width:508px){
+        width:326px;
+      }
       .social-media {
         display: flex;
         align-items: center;
@@ -215,9 +238,14 @@ header {
   }
 }
 .cards-section-title {
+  
   font-size: 24px;
   font-weight: 700;
   margin-top: 46px;
+
+  @media(max-width: 1055px) {
+    text-align: center;
+}
 }
 
 .second-card-container {
@@ -225,6 +253,9 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media(max-width: 1055px) {
+    justify-content: space-evenly;
+}
   .card {
     width: 255px;
     height: 125px;
@@ -234,7 +265,10 @@ header {
     justify-content: space-evenly;
     padding: 0px 20px;
     border-radius: 5px;
-    margin-top:24px;
+    margin-top: 24px;
+    @media(max-width:508px){
+      width:326px;
+    }
     cursor: pointer;
     .top {
       display: flex;
@@ -276,4 +310,6 @@ header {
   }
 }
 
-
+// @media(max-width: 1055px) {
+//     justify-content: space-evenly !important;
+// }
