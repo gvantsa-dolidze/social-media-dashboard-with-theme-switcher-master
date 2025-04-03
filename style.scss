@@ -40,6 +40,7 @@ body {
   margin: auto;
   margin-top: 36px;
   font-family: inter;
+  padding: 0px 20px;
 }
 header {
   display: flex;
@@ -72,7 +73,7 @@ header {
       display: inline-block;
       width: 60px;
       height: 34px;
-    
+
       input {
         opacity: 0;
         width: 0;
@@ -100,17 +101,17 @@ header {
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
-    
+
       input:checked + .slider:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
       }
-    
+
       .slider.round {
         border-radius: 34px;
       }
-    
+
       .slider.round:before {
         border-radius: 50%;
       }
@@ -118,4 +119,61 @@ header {
   }
 }
 
-
+.card-section {
+  margin-top: 136px;
+  .top-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .card {
+      min-width: 255px;
+      height: 216px;
+      background-color: $dark-navy-gray;
+      border-top: 4px solid #178ff5;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .social-media {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $grey;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .followers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+        .year {
+          color: $white;
+          font-size: 56px;
+          font-weight: 700;
+          line-height: 48px; /* 85.714% */
+          letter-spacing: -2px;
+        }
+        .text {
+          color: $grey;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+        }
+      }
+      .today {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        span {
+          color: $green;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
