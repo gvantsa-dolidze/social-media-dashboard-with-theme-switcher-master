@@ -13,6 +13,9 @@ body {
 .text-color-grey{
     color:#848BAB;
 }
+.text-color-black{
+    color:#1D1F29;
+}
 
 .switch {
     position: relative;
@@ -64,7 +67,7 @@ body {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+
   .slider.round {
     border-radius: 34px;
   }
