@@ -37,48 +37,40 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.header-left-content {
+header .header-left-content {
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-
-.header-title {
+header .header-left-content .header-title {
   font-size: 28px;
   font-weight: 700;
 }
-
-.total {
+header .header-left-content .total {
   font-size: 14px;
   font-weight: 700;
 }
-
-.btn-content {
+header .btn-content {
   display: flex;
   align-items: center;
   gap: 13px;
 }
-
-.btn-text {
+header .btn-content .btn-text {
   font-size: 14px;
   font-weight: 700;
 }
-
-.switch {
+header .btn-content .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
-
-.switch input {
+header .btn-content .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-.slider {
+header .btn-content .switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -89,8 +81,7 @@ header {
   transition: 0.4s;
   background: linear-gradient(245deg, #40db82 0%, #388fe7 100%);
 }
-
-.slider:before {
+header .btn-content .switch .slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -101,18 +92,15 @@ header {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
-input:checked + .slider:before {
+header .btn-content .switch input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
-.slider.round {
+header .btn-content .switch .slider.round {
   border-radius: 34px;
 }
-
-.slider.round:before {
+header .btn-content .switch .slider.round:before {
   border-radius: 50%;
 }
 
