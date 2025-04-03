@@ -31,6 +31,12 @@ $card-top-border: linear-gradient(
 .text-color-black {
   color: $dark;
 }
+.card-dark {
+  background-color: $dark-navy-gray;
+}
+.card-light {
+  background-color: $light-grey;
+}
 .blue-top-border {
   border-top: 4px solid $blue;
 }
@@ -58,11 +64,11 @@ $card-top-border: linear-gradient(
   box-sizing: border-box;
 }
 body {
-  max-width: 1440px;
+  max-width: 1110px;
   margin: auto;
   margin-top: 36px;
   font-family: inter;
-  padding: 0px 20px;
+  // padding: 0px 20px;
 }
 header {
   display: flex;
@@ -147,13 +153,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
-    .card-dark {
-      background-color: $dark-navy-gray;
-    }
-    .card-light {
-      background-color: $light-grey;
-    }
+
     .card {
       min-width: 255px;
       height: 216px;
@@ -162,6 +162,8 @@ header {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      margin-bottom: 24px;
+      cursor: pointer;
       .social-media {
         display: flex;
         align-items: center;
@@ -208,3 +210,59 @@ header {
   margin-top: 46px;
 }
 
+.second-card-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  // gap:30px;
+  flex-wrap: wrap;
+  .card {
+    width: 255px;
+    height: 125px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    border-radius: 5px;
+    margin-top:24px;
+    cursor: pointer;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        color: $grey;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      .count {
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span {
+          color: #1eb589;
+          text-align: right;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

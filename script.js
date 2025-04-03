@@ -1,7 +1,6 @@
 const body = document.querySelector("body");
 const btn = document.querySelector(".color-toggle-btn");
 const cards = document.querySelectorAll(".card-dark");
-
 const whiteText = document.querySelectorAll(".text-color-white");
 
 btn.addEventListener("click", () => {
@@ -10,6 +9,6 @@ btn.addEventListener("click", () => {
     card.classList.toggle("card-light");
   });
   whiteText.forEach((text)=>{
-    text.classList.toggle('text-color-black')
+    text.classList.toggle('text-color-black');
   })
 });
