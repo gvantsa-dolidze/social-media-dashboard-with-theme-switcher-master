@@ -2,9 +2,15 @@
 .dark-mode {
   background-color: #1d1f29;
 }
+.dark-mode .card:hover {
+  background-color: #333a55;
+}
 
 .light-mode {
   background-color: #fff;
+}
+.light-mode .card:hover {
+  background-color: #E1E4F0;
 }
 
 .text-color-white {
@@ -17,6 +23,10 @@
 
 .text-color-black {
   color: #1d1f29;
+}
+
+.text-color-red {
+  color: #dc414c;
 }
 
 .card-dark {

@@ -18,10 +18,17 @@ $card-top-border: linear-gradient(
 
 .dark-mode {
   background-color: $dark;
+  .card:hover{
+    background-color: $shadow-midnight;
+  }
 }
 .light-mode {
   background-color: $white;
+  .card:hover {
+    background-color: #E1E4F0;
+  }
 }
+
 .text-color-white {
   color: $white;
 }
@@ -30,6 +37,9 @@ $card-top-border: linear-gradient(
 }
 .text-color-black {
   color: $dark;
+}
+.text-color-red{
+  color:$red;
 }
 .card-dark {
   background-color: $dark-navy-gray;
@@ -214,7 +224,6 @@ header {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
-  // gap:30px;
   flex-wrap: wrap;
   .card {
     width: 255px;
@@ -266,3 +275,5 @@ header {
     }
   }
 }
+
+
