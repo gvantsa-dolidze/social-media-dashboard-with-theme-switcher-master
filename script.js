@@ -1,10 +1,15 @@
 const body = document.querySelector("body");
-const colorToggleBtnText = document.querySelector(".btn-text-color");
-const headerTitle = document.querySelector('.header-title');
-const colorToggle = document.querySelector(".color-toggle-btn");
+const btn = document.querySelector(".color-toggle-btn");
+const cards = document.querySelectorAll(".card-dark");
 
-colorToggle.addEventListener("click", () => {
+const whiteText = document.querySelectorAll(".text-color-white");
+
+btn.addEventListener("click", () => {
   body.classList.toggle("light-mode");
-  colorToggleBtnText.classList.toggle("text-color-grey");
-  headerTitle.classList.toggle('text-color-black')
+  cards.forEach((card) => {
+    card.classList.toggle("card-light");
+  });
+  whiteText.forEach((text)=>{
+    text.classList.toggle('text-color-black')
+  })
 });

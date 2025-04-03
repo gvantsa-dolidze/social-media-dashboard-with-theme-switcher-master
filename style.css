@@ -138,10 +138,15 @@ header .btn-content .switch .slider.round:before {
   flex-wrap: wrap;
   gap: 30px;
 }
+.card-section .top-card-container .card-dark {
+  background-color: #252b42;
+}
+.card-section .top-card-container .card-light {
+  background-color: #f1f3fa;
+}
 .card-section .top-card-container .card {
   min-width: 255px;
   height: 216px;
-  background-color: #252b42;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -162,8 +167,7 @@ header .btn-content .switch .slider.round:before {
   align-items: center;
   gap: 9px;
 }
-.card-section .top-card-container .card .followers .year {
-  color: #fff;
+.card-section .top-card-container .card .followers .count {
   font-size: 56px;
   font-weight: 700;
   line-height: 48px; /* 85.714% */
@@ -185,6 +189,12 @@ header .btn-content .switch .slider.round:before {
   color: #1eb589;
   font-size: 12px;
   font-weight: 700;
+}
+
+.cards-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 46px;
 }
 
 /*# sourceMappingURL=style.css.map */
